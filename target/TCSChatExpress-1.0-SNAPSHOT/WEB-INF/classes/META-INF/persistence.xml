@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.0" xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd">
+  <persistence-unit name="forceDatabase">
+    <provider>com.force.sdk.jpa.PersistenceProviderImpl</provider>
+    <!-- In a single module web application, no need to specify classes. Classes 
+			will be autodiscovered based on @Entity annotation -->
+    <class>com.mycompany.tcs.model.Forumanswer</class>
+    <class>com.mycompany.tcs.model.Adminorg</class>
+    <class>com.mycompany.tcs.model.Forumques</class>
+    <class>com.mycompany.tcs.model.Employees</class>
+    <class>com.mycompany.tcs.model.Messages</class>
+    <class>com.mycompany.tcs.model.Notifications</class>
+    <properties>
+      <property name="datanucleus.storeManagerType" value="force"/>
+      <property name="datanucleus.autoCreateSchema" value="true"/>
+      <property name="datanucleus.validateTables" value="false"/>
+      <property name="datanucleus.validateConstraints" value="false"/>
+      <property name="datanucleus.Optimistic" value="false"/>
+      <property name="datanucleus.datastoreTransactionDelayOperations" value="true"/>
+      <property name="datanucleus.jpa.addClassTransformer" value="false"/>
+      <property name="datanucleus.cache.level2.type" value="none"/>
+      <property name="datanucleus.detachAllOnCommit" value="true"/>
+      <property name="datanucleus.copyOnAttach" value="false"/>
+    </properties>
+  </persistence-unit>
+</persistence>

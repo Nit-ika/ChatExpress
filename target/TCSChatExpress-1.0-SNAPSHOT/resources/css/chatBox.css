@@ -1,0 +1,57 @@
+@CHARSET "ISO-8859-1";
+
+@media only screen and (max-width : 540px) {
+	.chat-popup {
+		display: none !important;
+	}
+}
+
+.popup-box {
+	display: none;
+	position: fixed;
+	bottom: 0px;
+	right: 220px;
+	height: 400px;
+	background-color: rgb(237, 239, 244);
+	width: 350px;
+	border: 1px solid rgba(29, 49, 91, .3);
+}
+
+.popup-box .popup-head {
+	background-color: #6d84b4;
+	padding: 5px;
+	color: white;
+	font-weight: bold;
+	font-size: 14px;
+	clear: both;
+}
+
+.popup-box .popup-head .popup-head-left {
+	float: left;
+}
+
+.popup-box .popup-head .popup-head-right {
+	float: right;
+	opacity: 0.5;
+	font-weight: bolder;
+}
+
+.popup-box .popup-head .popup-head-right a {
+	text-decoration: none;
+	color: inherit;
+}
+
+.popup-box .popup-messages {
+	height: 75%;
+	overflow-y: scroll;
+}
+
+.msgBox {
+  bottom: 0;
+  height: 30px;
+  position: absolute;
+  border-top: thin;
+  border-top-color: blue;
+  text-align: center;
+  vertical-align: middle;
+}
