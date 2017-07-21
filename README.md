@@ -1,10 +1,12 @@
 # ChatExpress
 Business chat platform for employees
+
 •	ChatExpress is a chat application with a server and clients to enable an employee to chat with many other employees in the same common chat platform.
 •	The main purpose of this project is to provide chatting functionality and analysis of an employee through the generation of score card.
 •	This project can play an important role in organizational field where employees can connect together through internet.
 
 TECHNOLOGIES USED:
+
 IDE	-NETBEANS
 DATABASE	-MYSQL
 SERVER	-GLASSFISH SERVER 5.7
